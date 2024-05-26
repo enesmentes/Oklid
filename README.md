@@ -2,14 +2,14 @@
 Kodluyoruz ödev
 import math
 
-# Noktaların Tanımlanması
+
 points = [(-3, 0), (0, 0), (0, 4)]
 
-# Öklid Mesafesi İçin Bir Fonksiyon Yazma
+
 def euclideanDistance(point1, point2):
     return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
 
-# Mesafelerin Hesaplanması ve Adlandırılması
+
 distances = []
 names = ['a', 'b', 'c']
 distance_dict = {}
@@ -24,7 +24,7 @@ for i in range(len(points)):
         distances.append(distance)
         index += 1
 
-# Minimum Mesafenin Bulunması
+
 if distances:  # Mesafeler listesi boş olmadığından emin ol
     min_distance = min(distances)
     min_distance_name = [name for name, dist in distance_dict.items() if dist == min_distance][0]
